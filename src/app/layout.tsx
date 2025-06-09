@@ -31,26 +31,32 @@ export default function RootLayout({
 					<aside className="w-55 bg-[var(--color-background)] text-white p-4 space-y-4">
 						<h2 className="text-xl font-bold text-black">Lifeline</h2>
 						<Input type="email" placeholder="Search" />
-						<nav className="flex flex-col gap-5">
+						<nav className="flex flex-col gap-1">
 							<Link
 								href="/dashboard"
-								className="text-black flex gap-3 font-bold"
+								className="text-black flex gap-3 font-bold hover:bg-accent duration-200 p-3 rounded-xl"
 							>
 								<LayoutDashboard />
 								Dashboard
 							</Link>
 							<Link
 								href="/appointments"
-								className="text-black flex gap-3 font-bold"
+								className="text-black flex gap-3 font-bold hover:bg-accent duration-200 p-3 rounded-xl"
 							>
 								<CalendarFold />
 								Appointments
 							</Link>
-							<Link href="/doctors" className="text-black flex gap-3 font-bold">
+							<Link
+								href="/doctors"
+								className="text-black flex gap-3 font-bold hover:bg-accent duration-200 p-3 rounded-xl"
+							>
 								<BriefcaseMedical />
 								Doctors
 							</Link>
-							<Link href="/profile" className="text-black flex gap-3 font-bold">
+							<Link
+								href="/profile"
+								className="text-black flex gap-3 font-bold hover:bg-accent duration-200 p-3 rounded-xl"
+							>
 								<UserRoundPen />
 								Profile
 							</Link>
